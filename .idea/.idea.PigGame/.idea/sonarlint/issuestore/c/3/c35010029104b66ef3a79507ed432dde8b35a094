@@ -1,0 +1,9 @@
+
+[csharpsquid:S3903"2Move 'GameCubePoolsConfig' into a named namespace.(êŸÎÉÿÿÿÿÿ8Õî¥ïÎ1
+Kcsharpsquid:S3903"'Move 'PoolData' into a named namespace.(ü„Á’8³õ¢ïÎ1
+mcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(ïËÏúÿÿÿÿ8Õ¯²îÎ1
+mcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(±Šê³úÿÿÿÿ8¢¥ÒïÎ1
+mcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(Àãùûøÿÿÿÿ8èä§ïÎ1
+mcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(³Û‰æùÿÿÿÿ8Ìã¦ïÎ1
+hcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(£·Ëœ8öôÇïÎ1
+mcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(áÈ€üÿÿÿÿ8öôÇïÎ1
