@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class GameCubesGrid
 {
-    public Vector2Int Size { get; }
+    public Vector2Int Size { get; private set; }
     
     private GameCubeUnit[][] _matrix;
     private readonly List<GameCubeUnit> _units = new();
-
-
-    public GameCubesGrid(Vector2Int size)
+    
+    public void Resize(Vector2Int size)
     {
         Size = size;
         

@@ -4,13 +4,13 @@ namespace App.Scripts.Features.Cube
 {
     public class GameCubeUnit
     {
-        public ModelGameCube CubeModel { get; }
+        public CubeType CubeType { get; }
         public ViewGameCubeUnit View { get; private set; }
         public Vector2Int CellPosition { get; set; }
 
-        public GameCubeUnit(ModelGameCube cubeModel)
+        public GameCubeUnit(CubeType cubeType)
         {
-            CubeModel = cubeModel;
+            CubeType = cubeType;
         }
 
         public void UpdateView(ViewGameCubeUnit viewGameCubeUnit)

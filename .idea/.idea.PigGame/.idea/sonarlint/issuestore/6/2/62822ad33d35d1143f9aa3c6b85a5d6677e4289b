@@ -1,0 +1,6 @@
+
+kcsharpsquid:S2094@"BRemove this empty class, write its code or make it an "interface".(«ž‚Šûÿÿÿÿ8‡ ‹‚Ï1
+Zcsharpsquid:S3903"1Move 'ContainerLevelData' into a named namespace.(ð˜†´úÿÿÿÿ8Àå‚‚Ï1
+Rcsharpsquid:S3903@")Move 'PlayerData' into a named namespace.(«ž‚Šûÿÿÿÿ8‡ ‹‚Ï1
+Hcsharpsquid:S3903E"+Move 'GridCubeData' into a named namespace.(ëá­—
+fcsharpsquid:S1104G"DMake this field 'private' and encapsulate it in a 'public' property.(±Šê³úÿÿÿÿ

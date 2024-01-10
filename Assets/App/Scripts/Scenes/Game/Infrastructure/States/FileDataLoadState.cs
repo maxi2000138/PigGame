@@ -7,16 +7,16 @@ public class FileDataLoadState : IEnterState
 {
     private readonly ILevelParser _levelParser;
     private readonly ICubesParser _cubesParser;
-    private readonly ContainerCubesData _containerCubesData;
+    private readonly ContainerLevelData _containerLevelData;
     
     private readonly FilePathesConfig _filePathesConfig;
 
-    public FileDataLoadState(ILevelParser levelParser, ICubesParser cubesParser, ContainerCubesData containerCubesData
+    public FileDataLoadState(ILevelParser levelParser, ICubesParser cubesParser, ContainerLevelData containerLevelData
         , FilePathesConfig filePathesConfig)
     {
         _levelParser = levelParser;
         _cubesParser = cubesParser;
-        _containerCubesData = containerCubesData;
+        _containerLevelData = containerLevelData;
         _filePathesConfig = filePathesConfig;
     }
     
@@ -24,7 +24,7 @@ public class FileDataLoadState : IEnterState
     {
         LoadFileData(1);
         
-        gameStateMachine.Enter<GameplayState>();
+        gameStateMachine.Enter<SpawnPrefabsState>();
         return UniTask.CompletedTask;
     }
 
@@ -36,7 +36,7 @@ public class FileDataLoadState : IEnterState
         LevelFileData levelFileData = _levelParser.ParseLevel(levelStringData);
         CubesFileData cubesFileData = _cubesParser.ParseCubes(cubesStringData);
         
-        _containerCubesData.SetupLevelData(levelFileData, cubesFileData);
+        _containerLevelData.SetupLevelData(levelFileData, cubesFileData);
     }
 
     private string GetLevelPath(int lvl) => string.Format(_filePathesConfig.LevelsDataPath, lvl);

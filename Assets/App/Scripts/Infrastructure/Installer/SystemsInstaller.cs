@@ -7,5 +7,11 @@ public class SystemsInstaller : MonoInstaller
     {
         Container.Bind<UpdateSystemGroup>().AsSingle();
         Container.Bind<FixedUpdateSystemGroup>().AsSingle();
+        
+        BindSystem<ConvertDragDataToSlideVectorSystem>();
+        BindSystem<ProcessDragSlideVectorSystem>();
+        BindSystem<MoveSystem>();
     }
+
+    private void BindSystem<T>() where T : ISystem => Container.Bind<ISystem>().To<T>().AsSingle();
 }

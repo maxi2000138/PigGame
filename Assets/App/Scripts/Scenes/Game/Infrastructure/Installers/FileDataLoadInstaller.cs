@@ -6,6 +6,6 @@ public class FileDataLoadInstaller : MonoInstaller
     {
         Container.Bind<ILevelParser>().To<LevelParser>().AsSingle();
         Container.Bind<ICubesParser>().To<CubesParser>().AsSingle();
-        Container.Bind<ContainerCubesData>().AsSingle();
+        Container.Bind<ContainerLevelData>().AsSingle();
     }
 }

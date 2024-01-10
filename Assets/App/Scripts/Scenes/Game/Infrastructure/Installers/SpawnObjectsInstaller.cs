@@ -4,6 +4,7 @@ public class SpawnObjectsInstaller : MonoInstaller
 {
     public override void InstallBindings()
     {
-        Container.BindInterfacesTo<GameCubesPool>().AsSingle();
+        Container.BindInterfacesAndSelfTo<GameCubesSpawner>().AsSingle();
+        Container.BindInterfacesAndSelfTo<PigSpawner>().AsSingle();
     }
 }

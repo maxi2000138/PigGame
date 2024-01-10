@@ -14,7 +14,27 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":9,
          "id":1,
-         "name":"\u0421\u043b\u043e\u0439 \u0442\u0430\u0439\u043b\u043e\u0432 1",
+         "name":"Cubes",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":9,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 9, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":9,
+         "id":2,
+         "name":"Player",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -22,7 +42,7 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":2,
+ "nextlayerid":3,
  "nextobjectid":1,
  "orientation":"orthogonal",
  "renderorder":"right-down",
@@ -32,6 +52,10 @@
         {
          "firstgid":1,
          "source":"..\/TileSets\/TiledPigTiles.json"
+        }, 
+        {
+         "firstgid":9,
+         "source":"..\/TileSets\/PlayerTile.json"
         }],
  "tilewidth":32,
  "type":"map",
