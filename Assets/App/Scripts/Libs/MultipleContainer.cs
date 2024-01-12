@@ -4,6 +4,8 @@ public class MultipleContainer<T> where T : class
 {
     public List<T> Items { get; private set; }
 
+    private readonly List<T> _delayedItems = new();
+
     public MultipleContainer(List<T> startItems)
     {
         Items = startItems;
@@ -28,6 +30,21 @@ public class MultipleContainer<T> where T : class
             throw new ExceptionContainer($"Container doesn't contain item {item}");
         
         Items.Remove(item);
+    }
+    
+    public void MarkAsDelayedRemove(T item)
+    {
+        _delayedItems.Add(item);
+    }
+
+    public void RemoveDelayedItems()
+    {
+        foreach (var delayedItem in _delayedItems)
+        {
+            Items.Remove(delayedItem);
+        }
+        
+        _delayedItems.Clear();
     }
 
     public void Clear()

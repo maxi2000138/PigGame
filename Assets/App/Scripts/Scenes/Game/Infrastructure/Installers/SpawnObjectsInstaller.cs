@@ -4,7 +4,10 @@ public class SpawnObjectsInstaller : MonoInstaller
 {
     public override void InstallBindings()
     {
-        Container.BindInterfacesAndSelfTo<GameCubesSpawner>().AsSingle();
-        Container.BindInterfacesAndSelfTo<PigSpawner>().AsSingle();
+        Container.Bind<GameBlocksFactory>().AsSingle();
+        Container.Bind<PigFactory>().AsSingle();
+        
+        Container.BindInterfacesAndSelfTo<GameBlocksViewFactory>().AsSingle();
+        Container.BindInterfacesAndSelfTo<PigViewFactory>().AsSingle();
     }
 }

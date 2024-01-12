@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 59a1965e583f6cf4b851d2746494b877, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.31621253, g: 0.34906286, b: 0.40460616, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: e97d7988d3f09654bbe3461d23f89cf2, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 64cb48087f69e3a4f9f5cad817d46fe4, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &68399335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 68399336}
+  m_Layer: 0
+  m_Name: PigInstaller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &68399336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68399335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1313076047}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &136941373
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mainCamera: {fileID: 963194227}
+  _dragTracker: {fileID: 1791262057}
 --- !u!1 &249411925
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,6 +374,7 @@ MonoBehaviour:
   _scriptableConfigs:
   - {fileID: 11400000, guid: f9764fb90d89114419fa2929a01a181d, type: 2}
   - {fileID: 11400000, guid: 21c242bd91caabb4ca8ede36192dd0cc, type: 2}
+  - {fileID: 11400000, guid: 4e412b11d0c489a449978c2c44626a42, type: 2}
   _monoConfigs:
   - {fileID: 1444600902}
   - {fileID: 1904874126}
@@ -413,6 +446,8 @@ MonoBehaviour:
   - rid: 1936421570968289281
   - rid: 1936421611067932672
   - rid: 1936421485486800898
+  - rid: 1936421636011982848
+  - rid: 1936421636011982849
   references:
     version: 2
     RefIds:
@@ -424,6 +459,41 @@ MonoBehaviour:
       type: {class: FileDataLoadState, ns: , asm: Assembly-CSharp}
     - rid: 1936421611067932672
       type: {class: SpawnPrefabsState, ns: , asm: Assembly-CSharp}
+    - rid: 1936421636011982848
+      type: {class: LooseState, ns: , asm: Assembly-CSharp}
+    - rid: 1936421636011982849
+      type: {class: WinState, ns: , asm: Assembly-CSharp}
+--- !u!1 &385766221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 385766222}
+  m_Layer: 0
+  m_Name: BlockInstaller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &385766222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385766221}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1313076047}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &440744008
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,7 +760,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.14
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -738,14 +808,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 440744009}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &757314921
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,7 +1001,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.1464466, y: -0.8535535, z: 0.35355338, w: 0.35355338}
-  m_LocalPosition: {x: 14.48, y: 18.09, z: 14.61}
+  m_LocalPosition: {x: 12.5, y: 15.29, z: 12.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1154,6 +1224,8 @@ Transform:
   - {fileID: 757314923}
   - {fileID: 505951250}
   - {fileID: 228808348}
+  - {fileID: 68399336}
+  - {fileID: 385766222}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1367,7 +1439,7 @@ GameObject:
   - component: {fileID: 1791262058}
   - component: {fileID: 1791262057}
   m_Layer: 0
-  m_Name: DragZone
+  m_Name: DragTracker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1487,7 +1559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15a8b6db5ce641388931763e5ccc7e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 3898362445483674872, guid: dbfe51badb219304d80a40ee4e682ff7, type: 3}
+  Prefab: {fileID: -5809218447657041410, guid: da08b1a6dca456a4dbdb4b4eedda1a4c, type: 3}
   PoolStartSize: 1
   DisabledItemParent: {fileID: 1937664187}
   ActiveItemParent: {fileID: 1149845073}
