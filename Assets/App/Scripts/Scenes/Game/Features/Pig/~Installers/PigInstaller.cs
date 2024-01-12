@@ -1,13 +1,14 @@
 using Zenject;
 
-public class SpawnObjectsInstaller : MonoInstaller
+public class PigInstaller : MonoInstaller
 {
     public override void InstallBindings()
     {
-        Container.Bind<GameBlocksFactory>().AsSingle();
         Container.Bind<PigFactory>().AsSingle();
-        
-        Container.BindInterfacesAndSelfTo<GameBlocksViewFactory>().AsSingle();
         Container.BindInterfacesAndSelfTo<PigViewFactory>().AsSingle();
+
+        Container.Bind<ContainerPigUnit>().AsSingle();
+        
+        Container.Bind<ContainerMoveRequest>().AsSingle();
     }
 }
