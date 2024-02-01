@@ -3,7 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Packages/com.maksimzabelo.core" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Packages/com.maksimzabelo.localization" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Packages/com.maksimzabelo.savesystem" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Packages/com.maksimzabelo.zenjectstatemachine" vcs="Git" />
   </component>

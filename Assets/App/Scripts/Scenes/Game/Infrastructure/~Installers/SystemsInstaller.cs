@@ -1,3 +1,4 @@
+using Infrastructure.Installers;
 using Zenject;
 
 public class SystemsInstaller : MonoInstaller
@@ -6,20 +7,20 @@ public class SystemsInstaller : MonoInstaller
     {
         Container.Bind<UpdateSystemGroup>().AsSingle();
         Container.Bind<FixedUpdateSystemGroup>().AsSingle();
+        Container.Bind<LateUpdateSystemGroup>().AsSingle();
         
+        BindUpdateSystem<DragEnableTrackSystem>();
+        BindUpdateSystem<ConvertDragDataToSlideVectorSystem>();
+        BindUpdateSystem<ProcessDragSlideVectorSystem>();
         
-        BindSystem<DragEnableTrackSystem>();
-        BindSystem<ConvertDragDataToSlideVectorSystem>();
-        BindSystem<ProcessDragSlideVectorSystem>();
+        BindUpdateSystem<PigMoveSystem>();
+        BindUpdateSystem<BlockHitSystem>();
         
-        BindSystem<PigMoveSystem>();
-        BindSystem<BlockHitSystem>();
+        BindUpdateSystem<PigAnimateMoveSystem>();
+        BindUpdateSystem<BlockAnimateHitSystem>();
         
-        BindSystem<PigAnimateMoveSystem>();
-        BindSystem<BlockAnimateHitSystem>();
-        
-        BindSystem<GameStateChangeSystem>();
+        BindUpdateSystem<GameStateChangeSystem>();
     }
 
-    private void BindSystem<T>() where T : ISystem => Container.Bind<ISystem>().To<T>().AsSingle();
+    private void BindUpdateSystem<T>() where T : IUpdateSystem => Container.Bind<IUpdateSystem>().To<T>().AsSingle();
 }

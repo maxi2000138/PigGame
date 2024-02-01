@@ -13,12 +13,6 @@
       "source": "embedded",
       "dependencies": {}
     },
-    "com.maksimzabelo.localization": {
-      "version": "file:com.maksimzabelo.localization",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
     "com.maksimzabelo.savesystem": {
       "version": "file:com.maksimzabelo.savesystem",
       "depth": 0,

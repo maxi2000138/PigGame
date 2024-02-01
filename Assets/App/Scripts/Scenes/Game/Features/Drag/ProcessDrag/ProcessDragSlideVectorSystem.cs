@@ -1,7 +1,7 @@
 using Infrastructure.StateMachine;
 using UnityEngine;
 
-public class ProcessDragSlideVectorSystem : ISystem
+public class ProcessDragSlideVectorSystem : IUpdateSystem
 {
     private readonly ContainerDragVector _containerDragVector;
     private readonly ContainerMoveRequest _containerMoveRequest;

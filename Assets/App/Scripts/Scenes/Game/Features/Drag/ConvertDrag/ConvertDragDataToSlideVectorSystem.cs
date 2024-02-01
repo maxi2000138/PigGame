@@ -1,7 +1,7 @@
 using Infrastructure.StateMachine;
 using UnityEngine;
 
-public class ConvertDragDataToSlideVectorSystem : ISystem
+public class ConvertDragDataToSlideVectorSystem : IUpdateSystem
 {
     private readonly ContainerDragsEventData _containerDragsEventData;
     private readonly ContainerDragVector _containerDragVector;

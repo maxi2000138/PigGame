@@ -1,6 +1,6 @@
 using Infrastructure.StateMachine;
 
-public class DragEnableTrackSystem : ISystem
+public class DragEnableTrackSystem : IUpdateSystem
 {
     private readonly DragTracker _dragTracker;
 

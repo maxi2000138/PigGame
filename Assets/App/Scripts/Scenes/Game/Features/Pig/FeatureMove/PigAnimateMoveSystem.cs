@@ -1,7 +1,7 @@
 using Infrastructure.StateMachine;
 using UnityEngine;
 
-public class PigAnimateMoveSystem : ISystem
+public class PigAnimateMoveSystem : IUpdateSystem
 {
     private readonly ContainerMoveRequest _containerMoveRequest;
     private readonly ContainerPigUnit _containerPigUnit;

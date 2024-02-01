@@ -2,7 +2,7 @@ using App.Scripts.Features.Cube;
 using Infrastructure.StateMachine;
 using UnityEngine;
 
-public class PigMoveSystem : ISystem
+public class PigMoveSystem : IUpdateSystem
 {
     private readonly ContainerMoveRequest _containerMoveRequest;
     private readonly ContainerPigUnit _containerPigUnit;

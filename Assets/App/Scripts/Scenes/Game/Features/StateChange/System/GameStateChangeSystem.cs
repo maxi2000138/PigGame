@@ -1,6 +1,6 @@
 using Infrastructure.StateMachine;
 
-public class GameStateChangeSystem : ISystem
+public class GameStateChangeSystem : IUpdateSystem
 {
     private readonly ContainerStateChange _containerStateChange;
 

@@ -1,6 +1,6 @@
 using Infrastructure.StateMachine;
 
-public class BlockAnimateHitSystem : ISystem
+public class BlockAnimateHitSystem : IUpdateSystem
 {
     public void Init()
     { }

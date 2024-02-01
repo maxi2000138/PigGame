@@ -1,7 +1,7 @@
 using Infrastructure.StateMachine;
 using UnityEngine;
 
-public class BlockHitSystem : ISystem
+public class BlockHitSystem : IUpdateSystem
 {
     private readonly ContainerHitBlocks _containerHitBlocks;
     private readonly BlocksHitOrderConfig _blocksHitOrderConfig;
